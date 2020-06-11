@@ -18,7 +18,7 @@ int main(void)
 		printf("%d and %d is greater than 5\n", l, l);
 	else if (l == 0)
 		printf("%d and %d is 0\n", l, l);
-	else if (l < 6)
+	else if (l < 6 && l != 0)
 		printf("%d and %d is less than 6 and not 0 \n", l, l);
 return (0);
 }
