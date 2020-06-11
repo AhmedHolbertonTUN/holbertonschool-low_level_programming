@@ -10,5 +10,6 @@ int main(void)
 
 	for (a = 97; a <= 122; a++)
 		putchar(a);
+	printf("\n");
 	return (0);
 }
