@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * print_alphabet_x10 prints 10 times the alphabet, in lowercase.
+ * main - check the code for Holberton School students.
  *
- * Return: void.
+ * Return: Always 0.
  */
+
 void print_alphabet_x10(void)
 {
 	char c;
