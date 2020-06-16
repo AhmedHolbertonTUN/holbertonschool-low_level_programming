@@ -1,11 +1,13 @@
 #include "holberton.h"
 
 /**
- * add is a function that adds two integers and returns the result.
+ * add - a function that adds two integers and returns the result.
+ *@a: integer
+ *@b: integer
  *
- * Return : a + b.
- *
+ * Return: a + b.
  */
+
 int add(int a, int b)
 {
 	return (a + b);
