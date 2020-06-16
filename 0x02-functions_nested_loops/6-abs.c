@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _abs is a function that print the sign of a number.
+ * _abs - a function that print the sign of a number
+ *@n : integer
  *
- * Returns n if n is greater than zero.
- * Returns -n and prints - if n is less than zero.
+ * Return: absolute value of n
  */
 int _abs(int n)
 {
