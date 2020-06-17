@@ -24,6 +24,9 @@ int main(void)
 		}
 		else
 		{
+			xn = xn1 + xn2;
+			xn1 = xn2;
+			xn2 = xn;
 			printf("%lu", xn);
 		}
 	}
