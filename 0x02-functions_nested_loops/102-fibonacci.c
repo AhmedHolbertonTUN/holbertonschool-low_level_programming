@@ -15,10 +15,17 @@ int main(void)
 	xn2 = 1;
 	for (i = 0; i < n; i++)
 	{
+		if (i < 49)
+		{
 		xn = xn1 + xn2;
 		xn1 = xn2;
 		xn2 = xn;
 		printf("%lu, ", xn);
+		}
+		else
+		{
+			printf("%lu", xn);
+		}
 	}
 	return (0);
 }
