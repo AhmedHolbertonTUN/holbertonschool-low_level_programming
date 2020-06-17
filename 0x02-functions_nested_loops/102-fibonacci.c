@@ -8,7 +8,7 @@
 int main(void)
 {
 	int xn1, n, xn2, i;
-	long long int xn;
+	unsigned long int xn;
 
 	n = 50;
 	xn1 = 0;
