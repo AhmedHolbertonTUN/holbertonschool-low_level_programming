@@ -1,15 +1,15 @@
 #include "holberton.h"
 
 /**
- * more_numbers - print digit except 2 and 4
+ * more_numbers - print digit 10 times from 0 to 14
  *
  *
- *
+ *Return: 0
  */
 
 void more_numbers(void)
 {
-	int a, i
+	int a, i;
 
 		a = 0;
 	for (i = 0; i <= 9; i++)
