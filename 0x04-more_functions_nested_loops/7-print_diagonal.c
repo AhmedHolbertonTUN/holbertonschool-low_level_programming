@@ -1,6 +1,7 @@
 #include "holberton.h"
+
 /**
- * print_diagonal - a function that draws a diagonal line on the terminal.
+ * print_diagonal - a function that draws a diagonal line on the terminal
  *@n: integer
  *
  * Return: void
@@ -14,7 +15,7 @@ void print_diagonal(int n)
 	{
 	for (j = 0; j < n; j++)
 	{
-		for (i = 0; i <= j; i++)
+		for (i = 1; i <= j; i++)
 		{
 			_putchar(' ');
 		}
