@@ -1,7 +1,9 @@
-0x07. C - Even more pointers, arrays and strings
-Description
-What you should learn from this project:
+**0x07. C - Even more pointers, arrays and strings**
 
-What are pointers to pointers and how to use them
-What are multidimensional arrays and how to use them
-What are the most common C standard library functions to manipulate strings
+**Description**
+
+What you should learn from this project: \n
+\n
+- What are pointers to pointers and how to use them \n
+- What are multidimensional arrays and how to use them \n
+- What are the most common C standard library functions to manipulate strings \n
