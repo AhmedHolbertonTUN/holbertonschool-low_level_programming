@@ -2,8 +2,8 @@
 
 **Description**
 
-What you should learn from this project: \n
-\n
-- What are pointers to pointers and how to use them \n
-- What are multidimensional arrays and how to use them \n
-- What are the most common C standard library functions to manipulate strings \n
+What you should learn from this project: 
+
+- What are pointers to pointers and how to use them 
+- What are multidimensional arrays and how to use them 
+- What are the most common C standard library functions to manipulate strings
