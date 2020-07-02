@@ -25,8 +25,12 @@ char *_strpbrk(char *s, char *accept)
 		if (stop != 0)
 			break;
 	}
-
+	if (stop != 0)
+	{
 	for (i = 0; i < ls - stop; i++)
 		t = s + stop;
 	return (t);
+	}
+	else
+		return ('\0');
 }
