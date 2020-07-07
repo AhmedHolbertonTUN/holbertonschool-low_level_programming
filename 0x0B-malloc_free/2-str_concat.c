@@ -24,11 +24,12 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 	}
 	s = malloc(sizeof(char) * (len1 + len2));
-
-	for (i = 0; i < len1; i++)
+	if (len1 != 0)
+		for (i = 0; i < len1; i++)
 		s[i] = s1[i];
-	for (j = i; j < len1 + len2; j++)
+	if (len2 != 0)
+		for (j = i; j < len1 + len2; j++)
 		s[j] = s2[j - i];
-	s[j] = '\0';
+	s[len1 + len2] = '\0';
 	return (s);
 }
