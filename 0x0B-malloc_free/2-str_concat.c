@@ -1,53 +1,34 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
- * _strlen - returns the lenght of a string
- * @s: pointer to s
- *
- * Return: 0 on success
- *
- */
-int _strlen(char *s)
-{
-	int count = 0;
-
-	if (s != '\0')
-	{
-		while (*(s + count) != '\0')
-			count++;
-	}
-	return (count);
-}
-/**
- * str_concat - concatenates two strings
- * @s1: string 1
- * @s2: string 2
- *
- * Return: pointer to new string or NULL on failiure
+ * str_concat - recive two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: a string concattning first and second string.
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *new_str;
-	int length, i, j, l1, l2;
+	int i = 0, j = 0, szt = 0;
+	char *s0;
 
-	if (s1 != NULL)
-		l1 = _strlen(s1);
-	else
-		l1 = 0;
-	if (s2 != NULL)
-		l2 = _strlen(s2);
-	else
-		l2 = 0;
-	length = l1 + l2 + 1;
-	i = 0;
-	j = 0;
-	new_str = malloc(sizeof(char) * length);
-	if (l1 != 0)
-		for (i = 0; s1[i] != '\0'; i++)
-			new_str[i] = s1[i];
-	if (l2 != 0)
-		for (j = 0; s2[j] != '\0'; i++, j++)
-			new_str[i] = s2[j];
-	new_str[i] = '\0';
-	return (new_str);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	while (s1[i])
+		i++;
+	while (s2[j])
+		j++;
+	szt = i + j;
+	s0 = (char *) malloc((szt + 1) * sizeof(char));
+	if (s0 == 0)
+		return (NULL);
+
+	for (i = 0; i < szt - j; i++)
+		s0[i] = s1[i];
+	for (j = 0; i <= szt; j++, i++)
+		s0[i] = s2[j];
+	s0[i + 1] = '\0';
+	return (s0);
 }
